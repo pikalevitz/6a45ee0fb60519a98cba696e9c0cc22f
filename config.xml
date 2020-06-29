@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.zaprosto47.app"
+        versionCode = "10"
+        version     = "1.1.0">
+
+    <name>zaprosto47</name>
+
+    <description>
+        zaprosto47.ru - магазин запчастей для иномарок в Пикалево, комплектов ТО, ламп и многого другого. Заказывайте запчасти в удобном для вас формате. Самостоятельно, при посещении точки выдачи или по телефону. Страхование ОСАГО и туристических поездок онлайн.
+    </description>
+
+    <author>Tadapp</author>
+
+    <plugin name='cordova-plugin-splashscreen' />
+    <plugin name='cordova-plugin-inappbrowser' />
+    <plugin name='cordova-plugin-network-information' />
+
+    <preference name='phonegap-version' value='cli-9.0.0' />
+
+    <gap:plugin name='onesignal-cordova-plugin' spec='2.4.5' source='npm' />
+
+    <preference name='android-build-tool' value='gradle' />
+    <preference name="android-targetSdkVersion" value="28" />
+    <preference name='orientation' value='portrait' />
+
+    <preference name="SplashMaintainAspectRatio" value="false" />
+    <preference name="SplashScreenSpinnerColor" value="#ffffff" />
+
+    <preference name="Fullscreen" value="false" />
+
+
+    <platform name="android">
+        <icon src="res/android/icon/1593264667_ad319e16a6ce9f0545c7.png" density="ldpi" />
+        <icon src="res/android/icon/1593264667_38db82ce1db0c773f15d.png" density="mdpi" />
+        <icon src="res/android/icon/1593264667_b0f6e7f14f445b014a88.png" density="hdpi" />
+        <icon src="res/android/icon/1593264667_9181a10abe27d3065a74.png" density="xhdpi" />
+        <icon src="res/android/icon/1593264667_d48d429750cf2e20572d.png" density="xxhdpi" />
+        <icon src="res/android/icon/1593264667_8a12adf5a0097d4a35d2.png" density="xxxhdpi" />
+
+        <splash src="res/android/screen/1593264763_3bd02bc0eab5d3509f72.png" density="port-hdpi"/>
+        <splash src="res/android/screen/1593264763_acee84a803c4d624424e.png" density="port-ldpi"/>
+        <splash src="res/android/screen/1593264763_cc4e141d47407c2a3deb.png" density="port-mdpi"/>
+        <splash src="res/android/screen/1593264763_d31ee6218cdf69da5e09.png" density="port-xhdpi"/>
+        <splash src="res/android/screen/1593264763_0c257adcf70e1c3213e5.png" density="land-hdpi"/>
+        <splash src="res/android/screen/1593264763_b8a3b431a7e95565f436.png" density="land-ldpi"/>
+        <splash src="res/android/screen/1593264763_09dbb004f2b495a247d2.png" density="land-mdpi"/>
+        <splash src="res/android/screen/1593264763_3038354a1b189d8723f6.png" density="land-xhdpi"/>
+    </platform>
+
+    <access origin='*'/>
+    <plugin name='cordova-plugin-whitelist' />
+    <allow-intent href='http://*/*'/>
+    <allow-intent href='https://*/*'/>
+    <allow-intent href='tel:*'/>
+    <allow-intent href='sms:*'/>
+    <allow-intent href='mailto:*'/>
+    <allow-intent href='geo:*'/>
+
+</widget>
